@@ -1,0 +1,329 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding-top: 70px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #000000; /* Dark, neutral color for a professional look */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #e0e0e0 !important; /* Light gray text */
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: rgb(49, 122, 161) !important; /* Soft golden color on hover */
+}
+
+/* Header Section */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/Backgroud.jpg'); /* Add gradient overlay for opacity */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+    position: relative;
+}
+
+header .title {
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+header .btn {
+    background-color: rgb(19, 48, 64); /* Modern golden color */
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: rgb(49, 122, 161); /* Darker shade on hover */
+    color: white;
+}
+
+/* Logo */
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+/*************** MAIN SECTIONS ***************/
+@media screen and (max-width:768px){
+    #row-introduction .row{
+        margin-left: 15px;
+        text-align: justify;
+        text-justify: inter-word;
+        margin-right: 15px;
+
+    }
+    #row-introduction .row img{
+        width: 90%;
+        align-items: center;
+    }
+}
+#row-introduction img{
+    border-radius: 5%;
+    margin-top: 70px;
+    width: 350px;
+}
+#row-introduction p{
+    font-size: 17px;
+    text-align: justify;
+}
+#row-introduction h1{
+    padding-top: 20px;
+    text-align: justify;
+
+}
+/* ESSENTIALS */
+@media screen and (max-width:768px){
+    #row-essentials .row{
+        margin-left: 15px;
+        text-align: justify;
+        text-justify: inter-word;
+        margin-right: 15px;
+    }
+    #row-essentials .row img{
+        width: 90%;
+        align-items: center;
+    }
+}
+
+#row-essentials img{
+    border-radius: 5%;
+    margin-top: 70px;
+    width: 350px;
+    margin-right: 60px;
+}
+#row-essentials ul{
+    font-size: 17px;
+    padding-top: 15px;
+    text-align: justify;
+    margin-right: 40px;
+}
+#row-essentials h1{
+    padding-top: 40px;
+    text-align: justify;
+    margin-left: 530px;
+}
+
+/* RESOURCES */
+#row-resources {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+#row-resources h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333; /* Darker text color for better readability */
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.button-container .btn {
+    background-color: rgb(19, 48, 64);
+    margin: 0 10px; /* Spacing between buttons */
+    padding: 10px 20px; /* More padding for buttons */
+    font-size: 1.1rem; /* Slightly larger text */
+    border-radius: 25px; /* Rounded buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation on hover */
+}
+
+.button-container .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.video-container {
+    margin-top: 30px;
+}
+
+.video-container iframe {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 800px; /* Limit max width for larger screens */
+    height: 450px; /* Fixed height for the video */
+    border: none; /* Remove default iframe border */
+    border-radius: 10px; /* Rounded corners for the video */
+}
+
+.video-container h2 {
+    margin-bottom: 20px;
+    color: #555; /* Slightly lighter text for the subtitle */
+}
+
+
+/* Survey */
+#row-survey {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+#row-survey h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333; /* Darker text color for better readability */
+}
+
+#row-survey .question {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: justify; /* Justify text in questions */
+}
+
+#row-survey .question label {
+    margin-right: 10px;
+}
+
+#row-survey .result {
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+#row-survey .result.correct {
+    color: green;
+}
+
+#row-survey .result.incorrect {
+    color: red;
+}
+
+#row-survey .btn {
+    display: block; /* Make the button a block element */
+    width: 200px; /* Set a fixed width for the button */
+    margin: 20px auto; /* Center the button horizontally */
+    padding: 10px 20px; /* Add padding for a better appearance */
+    background-color: rgb(19, 48, 64); /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+    background-color: rgb(49, 122, 161); /* Button hover color */
+}
+
+
+/* Contact */
+#row-contact{
+    padding-top: 35px !important;
+    padding-bottom: 55px !important;
+}
+
+#row-contact .btn{
+    display: block; /* Make the button a block element */
+    margin: 20px auto; /* Center the button horizontally */
+    padding: 10px 20px; /* Add padding for a better appearance */
+    background-color: rgb(19, 48, 64); /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+#row-contact h5{
+    text-align: center;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(19, 48, 64);
+}
+.pie-pagina .group1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+/* Footer */
+.pie-pagina .group1 .box h1{
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: inline-block;
+    text-decoration: none;
+}
+.pie-pagina .group1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .group1 .box p{
+    color: white;
+    margin-bottom: 10px;
+}
+.pie-pagina .group1 .socialmedia a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .group1 .socialmedia a:hover{
+    color: rgb(49, 122, 161); 
+}
+.pie-pagina .group2{
+    background-color: rgb(0, 0, 0);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.pie-pagina .group2 small{
+    font-size: 15px;
+}
+/* Modern Styling for Do's and Don'ts Section */
+#row-dosdonts {
+    margin: 40px 0; /* Margin above and below the section */
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.card-header {
+    font-size: 1.5em; /* Larger font for headers */
+}
+
+.card-body {
+    padding: 20px; /* Padding inside card body */
+}
+
+.list-unstyled li {
+    margin: 10px 0; /* Space between list items */
+    font-size: 1.1em; /* Slightly larger font for better readability */
+}
+
